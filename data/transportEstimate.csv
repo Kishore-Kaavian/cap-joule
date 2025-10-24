@@ -1,0 +1,4 @@
+source,dest,qty,cost,transitDays
+Plant1001,Plant-D1,30,120.50,2
+Plant1002,Plant-D2,50,200.75,3
+Plant1003,Plant-D3,20,90.00,1

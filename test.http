@@ -1,0 +1,55 @@
+### Find Top Sites
+POST http://localhost:4004/odata/v4/supply-chain/findTopSites
+Content-Type: application/json
+
+{
+  "productId": "P100",
+  "destSite": "Plant-D1",
+  "qty": 30
+}
+
+###
+
+### Check Stock
+POST http://localhost:4004/odata/v4/supply-chain/checkStock
+Content-Type: application/json
+
+{
+  "productId": "P100",
+  "site": "Plant1001"
+}
+
+###
+
+### Transport Estimate
+POST http://localhost:4004/odata/v4/supply-chain/transportEstimate
+Content-Type: application/json
+
+{
+  "source": "Plant1001",
+  "dest": "Plant-D1",
+  "qty": 30
+}
+
+###
+
+### Request Transfer
+POST http://localhost:4004/odata/v4/supply-chain/requestTransfer
+Content-Type: application/json
+
+{
+  "productId": "P100",
+  "qty": 30,
+  "source": "Plant1001",
+  "dest": "Plant-D1"
+}
+
+###
+
+### Pending Approvals
+POST http://localhost:4004/odata/v4/supply-chain/pendingApprovals
+Content-Type: application/json
+
+{
+  "approverId": "mgr1"
+}

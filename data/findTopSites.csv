@@ -1,0 +1,4 @@
+productId,destSite,qty,site,availableQty,score
+P100,Plant-D1,30,Plant1001,50,95
+P100,Plant-D1,30,Plant1002,40,88
+P100,Plant-D1,30,Plant1003,30,82

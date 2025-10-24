@@ -1,0 +1,9 @@
+applications:
+  - name: cap-joule
+    path: .
+    memory: 256M
+    buildpacks:
+      - nodejs_buildpack
+    command: npm start
+    env:
+      NODE_ENV: production

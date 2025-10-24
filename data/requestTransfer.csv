@@ -1,0 +1,4 @@
+transferId,productId,qty,source,dest,status,approvers
+TRX-1001,P100,30,Plant1001,Plant-D1,PENDING_APPROVAL,"mgr1,mgr2"
+TRX-1002,P101,50,Plant1002,Plant-D2,APPROVED,"mgr3,mgr4"
+TRX-1003,P102,20,Plant1003,Plant-D3,PENDING_APPROVAL,"mgr2,mgr5"
