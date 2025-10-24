@@ -1,9 +1,12 @@
 namespace supplychain;
 
+@path: '/service'
 service SupplyChainService {
 
+    function test() returns String;
+
     @odata.unbound
-    action findTopSites(productId: String, destSite: String, qty: Integer) 
+    function findTopSites(productId: String, destSite: String, qty: Integer) 
         returns array of {
             site: String;
             availableQty: Integer;
@@ -11,7 +14,7 @@ service SupplyChainService {
         };
 
     @odata.unbound
-    action checkStock(productId: String, site: String) 
+    function checkStock(productId: String, site: String) 
         returns {
             productId: String;
             site: String;
@@ -20,7 +23,7 @@ service SupplyChainService {
         };
 
     @odata.unbound
-    action transportEstimate(source: String, dest: String, qty: Integer) 
+    function transportEstimate(source: String, dest: String, qty: Integer) 
         returns {
             source: String;
             dest: String;
@@ -30,7 +33,7 @@ service SupplyChainService {
         };
 
     @odata.unbound
-    action requestTransfer(productId: String, qty: Integer, source: String, dest: String) 
+    function requestTransfer(productId: String, qty: Integer, source: String, dest: String) 
         returns {
             transferId: String;
             status: String;
@@ -38,7 +41,7 @@ service SupplyChainService {
         };
 
     @odata.unbound
-    action pendingApprovals(approverId: String) 
+    function pendingApprovals(approverId: String) 
         returns array of {
             id: String;
             product: String;
